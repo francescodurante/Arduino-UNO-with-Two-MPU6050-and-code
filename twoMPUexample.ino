@@ -13,7 +13,6 @@ void setup() {
   mpu6050.calcGyroOffsets(true);
   mpu60502.begin();
   mpu60502.calcGyroOffsets(true);
-  
 }
 
 void loop() {
@@ -32,6 +31,4 @@ void loop() {
   Serial.print(mpu60502.getAngleY());
   Serial.print("\tangleZ : ");
   Serial.println(mpu60502.getAngleZ());
-
-
 }
